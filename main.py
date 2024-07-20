@@ -35,7 +35,7 @@ def generate_message():
     dc = {i: "🟦" for i in range(1, 26)}
     
     for i in aposta:
-        dc[i] = "💎"
+        dc[i] = "🌟."
 
     bb = random.randint(3, 3)
     tt = random.randint(3, 3)
