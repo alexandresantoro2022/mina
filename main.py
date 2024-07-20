@@ -58,6 +58,7 @@ def generate_message():
 
 ⬇️ DEPÓSITO MÍNIMO R$10,00 ⬇️
 🎯 TENTATIVAS: {tt}X''')
+🎰 PLAYPIX
 🎮 JOGO MINES
 
     return msg, nh
