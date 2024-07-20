@@ -48,8 +48,7 @@ def generate_message():
 
     msg = (f'''
 ✅ ENTRADA CONFIRMADA ✅
-
-APOSTE COM: {bb} 💣
+   APOSTE COM: {bb} 💣
 
 {dc[1]} {dc[2]} {dc[3]} {dc[4]} {dc[5]}
 {dc[6]} {dc[7]} {dc[8]} {dc[9]} {dc[10]}
@@ -59,6 +58,7 @@ APOSTE COM: {bb} 💣
 
 ⬇️ DEPÓSITO MÍNIMO R$10,00 ⬇️
 🎯 TENTATIVAS: {tt}X''')
+🎮 JOGO MINES
 
     return msg, nh
 
