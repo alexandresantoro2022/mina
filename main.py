@@ -88,7 +88,7 @@ while True:
             hc = datetime.now().strftime('%H:%M')
             if hc == nh:
                 send_message_with_retry(chat_id, '🚨 ENTRADA FINALIZADA 🚨
-✅✅✅ VITORIA! ✅✅✅.')
+✅✅✅ VITORIA! ✅✅✅')
                 na = random.randint(120, 300)
                 time.sleep(na)
                 break
