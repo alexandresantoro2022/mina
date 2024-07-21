@@ -14,8 +14,6 @@ bot_token = "5966121092:AAE552KZdLxNhQC8NvL7AmXNVOZ2ETOep1E"  # Use variáveis d
 chat_id = "-1002013317198"  # Substitua pelo chat_id do seu grupo ou canal
 
 LINK_SITE_1 = 'https://sshortly1.com/8lxMRH'
-LINK_SITE_2 = 'https://example.com/link2'
-IMAGE_URL = 'https://example.com/path/to/image.jpg'
 
 # Inicialização do bot
 bot = telebot.TeleBot(token=bot_token)
@@ -72,8 +70,8 @@ def send_message_with_retry(chat_id, text, reply_markup=None):
 
 def create_inline_keyboard():
     keyboard = InlineKeyboardMarkup()
-    button1 = InlineKeyboardButton(text="🤑 JOGUE AQUI", url=LINK_SITE_1)
-    button2 = InlineKeyboardButton(text="🖥 CADASTRE-SE", url=LINK_SITE_2)
+    button1 = InlineKeyboardButton(text="🤑 CADASTRE-SE", url=LINK_SITE_1)
+
     keyboard.add(button1)
     keyboard.add(button2)
     return keyboard
