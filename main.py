@@ -31,7 +31,7 @@ telebot.apihelper.session = session
 
 def generate_message():
     resultados = range(1, 26)
-    aposta = random.sample(resultados, 4)
+    aposta = random.sample(resultados,5)
     dc = {i: "🟦" for i in range(1, 26)}
 
     for i in aposta:
@@ -46,18 +46,18 @@ def generate_message():
 
     msg = (f'''
 ✅ENTRADA CONFIRMADA✅
-  ✅ CASA PLAYPIX✅
-
+ 
 APOSTE COM: {bb} 💣
+🎯 TENTATIVAS: {tt}X''')
+✅ CASA PLAYPIX
 
 {dc[1]} {dc[2]} {dc[3]} {dc[4]} {dc[5]}
 {dc[6]} {dc[7]} {dc[8]} {dc[9]} {dc[10]}
 {dc[11]} {dc[12]} {dc[13]} {dc[14]} {dc[15]}
 {dc[16]} {dc[17]} {dc[18]} {dc[19]} {dc[20]}
 {dc[21]} {dc[22]} {dc[23]} {dc[24]} {dc[25]}
-
 ⬇️ DEPÓSITO MÍNIMO R$10,00 ⬇️
-🎯 TENTATIVAS: {tt}X''')
+
 
 
     return msg, nh
