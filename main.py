@@ -45,8 +45,10 @@ def generate_message():
     nh = (ha + ta).strftime('%H:%M')
 
     msg = (f'''
-✅ ENTRADA CONFIRMADA ✅
-   APOSTE COM: {bb} 💣
+✅ENTRADA CONFIRMADA✅
+  ✅ CASA PLAYPIX✅
+
+APOSTE COM: {bb} 💣
 
 {dc[1]} {dc[2]} {dc[3]} {dc[4]} {dc[5]}
 {dc[6]} {dc[7]} {dc[8]} {dc[9]} {dc[10]}
@@ -56,8 +58,7 @@ def generate_message():
 
 ⬇️ DEPÓSITO MÍNIMO R$10,00 ⬇️
 🎯 TENTATIVAS: {tt}X''')
-🎮 PLAYPIX
-🎮 JOGO MINES
+
 
     return msg, nh
 
@@ -71,9 +72,9 @@ def send_message_with_retry(chat_id, text, reply_markup=None):
 def create_inline_keyboard():
     keyboard = InlineKeyboardMarkup()
     button1 = InlineKeyboardButton(text="🤑 CADASTRE-SE", url=LINK_SITE_1)
-
+  
     keyboard.add(button1)
-    keyboard.add(button2)
+
     return keyboard
 
 while True:
@@ -85,7 +86,7 @@ while True:
         while True:
             hc = datetime.now().strftime('%H:%M')
             if hc == nh:
-                send_message_with_retry(chat_id, '✅✅✅ VITORIA! ✅✅✅')
+                send_message_with_retry(chat_id, '✅✅✅WIN ✅✅✅.')
                 na = random.randint(120, 300)
                 time.sleep(na)
                 break
