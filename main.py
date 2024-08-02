@@ -32,7 +32,7 @@ telebot.apihelper.session = session
 
 def generate_message():
     resultados = range(1, 26)
-    aposta = random.sample(resultados, 5)
+    aposta = random.sample(resultados, 3)
     dc = {i: "🟦" for i in range(1, 26)}
 
     for i in aposta:
